@@ -1,14 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tictactoe;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowEvent;
 import javax.swing.*;
 
 /**
@@ -72,7 +66,7 @@ public class GUI extends JFrame{
     public void showConfirmation(String winner) {
         int selectedOption = JOptionPane.showConfirmDialog(null, 
         winner + " wins!\nWant to play again?", 
-        "Play Again", 
+        "Game Over", 
         JOptionPane.YES_NO_OPTION); 
 
         if (selectedOption == JOptionPane.YES_OPTION) {
